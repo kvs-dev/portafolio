@@ -1,26 +1,21 @@
 ---
-import Layout from "@/layouts/Layout.astro"
-
-import AboutMe from "@/components/AboutMe.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import Experience from "@/components/Experience.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
+import Layout from "@/layouts/Layout.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
 ---
 
-<Layout
-  title="Kevin Villota - Full-Stack Developer"
->
+<Layout title="Kevin Villota - Full-Stack Developer">
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
-    <div class="space-y-20">
+  </main>
+  <div class="space-y-20">
     <SectionContainer id="experiencia">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-[#FF79C6] dark:text-white"
@@ -41,5 +36,4 @@ import Hero from "@/components/Hero.astro"
       <Projects />
     </SectionContainer>
   </div>
-  </main>
 </Layout>
