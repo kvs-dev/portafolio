@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Diciembre 2024",
+    title: "Full-Stack Developer",
+    company: "Sumz",
+    description:
+      'Contribuí al desarrollo de un sistema de atención al cliente con inteligencia artificial generativa, mejorando la rapidez y precisión de las respuestas, reduciendo costos y optimizando la experiencia del usuario. También trabajé en una fintech BNPL, donde resolví problemas, optimicé la interfaz y mejoré el flujo de aprobación de crédito. Además, gestioné solicitudes técnicas, solucioné incidencias y realizé mejoras que fortalecieron la estabilidad y eficiencia de la plataforma.',
+  },
+  {
+    date: "Junio 2024",
+    title: "Full-Stack Developer Trainee",
+    company: "Sumz",
+    description:
+      "Desarrollé aplicativos web para la automatización del servicio al cliente, implementé APIs en Node.js con Express y SQL, utilicé metodologías ágiles SCRUM e integré sistemas de terceros con prácticas de seguridad.",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

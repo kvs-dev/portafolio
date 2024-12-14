@@ -1,0 +1,42 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <a
+      href="https://www.linkedin.com/in/kvs32/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-[#FF79C6] sm:text-5xl dark:text-white"
+  >
+    Hola, soy Kevin
+  </h1>
+  <p
+    class="mt-6 text-xl text-[#F8F8F2] dark:[&>strong]:text-yellow-200 [&>strong]:text-[#F1FA8C] [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +1 año de experiencia. <strong
+      >Técnico en programación</strong
+    >
+    enfocado en el desarrollo web.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:kevinvs003@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/kvs32/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
